@@ -1,9 +1,18 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(180, 98, 180);
 }
 body {
     background: #eeeeee;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 #page {
     width: 21cm;

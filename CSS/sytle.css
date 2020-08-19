@@ -1,0 +1,130 @@
+.high-light {
+    color: #f60;
+}
+#page {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+header {
+    background: #404041;
+    position: relative;
+    color: white;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    padding: 20px;
+}
+header > h1 {
+    margin: 10px;
+}
+header > p {
+    color: #999999;
+}
+main {
+    padding: 1em;
+    display: flex;
+    color: #666666;
+}
+main > h1,h2,h3,h4,h5 {
+    margin: 10px 0;
+    color: #2397df;
+}
+main > aside {
+    width: 30%;
+    position: relative;
+    border-right: 2px solid #cccccc;
+}
+main > .content {
+    flex-grow: 1;
+}
+main > aside > section > div > ul > li {
+    font-size: 14px;
+    margin: 4px 0;
+}
+main > aside > section{
+    padding: 0 10px;
+}
+main > aside > section > div {
+    padding: 10px;
+    border-bottom: 2px solid #bbbbbb;
+}
+.avatar {
+   width: 100px; 
+   height: 100px;
+   position: absolute;
+   top: -1em;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   border-radius: 50%;
+   overflow: hidden;
+}
+.avatar > img {
+    max-width: 100%;
+    max-height: 100%;  
+}
+.personal {
+    margin-top: 40px;
+}
+.personal > ul {
+    padding: 0;
+}
+.personal > ul > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.personal > ul > li > span:nth-child(2){
+    width: 50%;
+}
+.chat > ul > li {
+    display: flex;
+    align-items: center;
+}
+.more {
+    border: none;
+}
+.more > ul > li > img {
+    width: 24px;
+    height: 24px;
+}
+.more li {
+    display: flex;
+    align-items: center;
+}
+.more img {
+    margin-right: 10px;
+}
+.content {
+    padding: 0 1em;
+}
+.content section div ul li {
+    font-size: 14px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.case img {
+    width: 100%;
+    border: 1px dashed #bbbbbb;
+}
+.case .link > a:not(:last-child){
+    border-right: 1px solid #bbbbbb;
+    padding-right: 4px;
+}
+.QRcode {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 10px;
+}
+.QRcode > img {
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+.QRcode.show {
+    display: block;
+}
