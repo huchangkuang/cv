@@ -31,7 +31,7 @@ main > h1,h2,h3,h4,h5 {
     color: #2397df;
 }
 main > aside {
-    width: 30%;
+    min-width: 30%;
     position: relative;
     border-right: 2px solid #cccccc;
 }
@@ -46,7 +46,7 @@ main > aside > section{
     padding: 0 10px;
 }
 main > aside > section > div {
-    padding: 10px;
+    padding: 10px 0;
     border-bottom: 2px solid #bbbbbb;
 }
 .avatar {
@@ -65,9 +65,6 @@ main > aside > section > div {
 }
 .personal {
     margin-top: 40px;
-}
-.personal > ul {
-    padding: 0;
 }
 .personal > ul > li {
     display: flex;
