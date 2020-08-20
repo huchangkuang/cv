@@ -1,5 +1,14 @@
+.icon {
+    width: 1.5em; height: 1.5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    margin-right: .5em;
+ }
 .high-light {
     color: #f60;
+    background: #eeeeee;
+    border-radius: 4px;
 }
 #page {
     display: flex;
@@ -111,6 +120,12 @@ main > aside > section > div {
     border-right: 1px solid #bbbbbb;
     padding-right: 4px;
 }
+.case li {
+    margin-bottom: 10px;
+}
+.case li img,.introduction,.achieve {
+    margin-bottom: 5px;
+}
 .QRcode {
     display: none;
     position: absolute;
@@ -124,4 +139,22 @@ main > aside > section > div {
 }
 .QRcode.show {
     display: block;
+}
+
+@media(max-width:500px){
+    #page {
+        width: 100%;
+    }
+    header {
+        min-height: 80px;
+    }
+    header > p,h1 {
+        display: none;
+    }
+    main {
+        flex-direction: column;
+    }
+    main > aside {
+        border-right: none;
+    }
 }
