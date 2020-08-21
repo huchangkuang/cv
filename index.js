@@ -1,5 +1,6 @@
 const previewVue = document.querySelector("#preview-vue")
 const qrcode = document.querySelector(".account_vue")
+const width = document.documentElement.clientWidth
 function previewQrCode(target, show) {
     target.addEventListener("mouseenter", () => {
         show.classList.add("show")
@@ -10,4 +11,6 @@ function previewQrCode(target, show) {
         }
     })
 }
-previewQrCode(previewVue, qrcode)
+if (width > 500) {
+    previewQrCode(previewVue, qrcode)
+}
