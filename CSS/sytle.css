@@ -140,6 +140,20 @@ main > aside > section > div {
 .QRcode.show {
     display: block;
 }
+.open-origin img {
+    width: 100%;
+    border: 1px dashed #bbbbbb;
+}
+.education > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media(max-width:500px){
     #page {
@@ -156,5 +170,13 @@ main > aside > section > div {
     }
     main > aside {
         border-right: none;
+    }
+    .education div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .work > div {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
