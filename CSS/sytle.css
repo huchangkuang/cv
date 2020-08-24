@@ -16,7 +16,8 @@
     padding: 0;
 }
 header {
-    background: #404041;
+    background: rgb(59, 59, 59);
+    -webkit-print-color-adjust: exact;
     position: relative;
     color: white;
     width: 100%;
