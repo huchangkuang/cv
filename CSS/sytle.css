@@ -73,6 +73,10 @@ main > aside > section > div {
     max-width: 100%;
     max-height: 100%;  
 }
+.skills > ul > li {
+    word-break: break-all;
+    list-style: inside;
+}
 .personal {
     margin-top: 40px;
 }
@@ -121,11 +125,8 @@ main > aside > section > div {
     border-right: 1px solid #bbbbbb;
     padding-right: 4px;
 }
-.case li {
-    margin-bottom: 10px;
-}
 .case li img,.introduction,.achieve {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 .link {
     position: relative;
@@ -188,7 +189,14 @@ main > aside > section > div {
     }
 }
 @media print {
-    .page-2 {
+    .page-2{
         page-break-before: always;
+        margin-top: 10px;
+    }
+    .more {
+        page-break-before: always;
+    }
+    .skills {
+        border-bottom: none;
     }
 }
