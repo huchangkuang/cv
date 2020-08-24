@@ -126,6 +126,9 @@ main > aside > section > div {
 .case li img,.introduction,.achieve {
     margin-bottom: 5px;
 }
+.link {
+    position: relative;
+}
 .QRcode {
     display: none;
     position: absolute;
@@ -139,6 +142,9 @@ main > aside > section > div {
 }
 .QRcode.show {
     display: block;
+}
+.account_react{
+    right: 0;
 }
 .open-origin img {
     width: 100%;
@@ -178,5 +184,10 @@ main > aside > section > div {
     .work > div {
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+@media print {
+    .page-2 {
+        page-break-before: always;
     }
 }
