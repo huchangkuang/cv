@@ -157,7 +157,13 @@ main > aside > section > div {
     justify-content: space-between;
     align-items: center;
 }
-.work > div {
+.work > .work-item:not(:last-child) {
+    border-bottom: 1px solid #eeeeee;
+}
+.work > .work-item {
+
+}
+.work > .work-item > .work-company {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -183,7 +189,7 @@ main > aside > section > div {
         flex-direction: column;
         align-items: flex-start;
     }
-    .work > div {
+    .work > .work-item {
         flex-direction: column;
         align-items: flex-start;
     }
