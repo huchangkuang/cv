@@ -161,12 +161,17 @@ main > aside > section > div {
     border-bottom: 1px solid #eeeeee;
 }
 .work > .work-item {
-
+    font-size: 14px;
+    padding: 4px 0;
 }
 .work > .work-item > .work-company {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 16px;
+}
+.work > .work-item > .work-content{
+
 }
 
 @media(max-width:500px){
@@ -199,9 +204,9 @@ main > aside > section > div {
         page-break-before: always;
         margin-top: 10px;
     }
-    .more {
-        page-break-before: always;
-    }
+    /*.more {*/
+    /*    page-break-before: always;*/
+    /*}*/
     .skills {
         border-bottom: none;
     }
